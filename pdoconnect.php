@@ -7,7 +7,7 @@ function pdo_connect(){
     $dbname = "snickr";
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     if(!$conn){
-        return false;//连接数据库失败输出false
+        return false;
     }else{
         return $conn;
     }
